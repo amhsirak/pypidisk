@@ -8,7 +8,7 @@ args = vars(ap.parse_args())
 
 def get_package_size(path):
     total_size = 0
-    for dirpath, dirnames, filenames in os.walk(path):
+    for dirpath, _, filenames in os.walk(path):
         for f in filenames:
             fp = os.path.join(dirpath, f)
             total_size += os.path.getsize(fp)
@@ -28,4 +28,3 @@ for dist in dists:
             print("-"*40)
     except OSError:
         '{} does not exist. Please check and try again later.'.format(dist.project_name)
-
