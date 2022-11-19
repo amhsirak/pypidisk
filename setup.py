@@ -18,7 +18,6 @@ setup(
     long_description_content_type="text/markdown",
     long_description= readme(),
     packages=find_packages(),
-    install_requires=['pytest'],
     keywords=['diskspace', 'dependencies', 'pypi', 'cli', 'pydisk', 'memory', 'modules', 'packages'],
     license="MIT",
     classifiers=[
