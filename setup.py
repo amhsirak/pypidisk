@@ -19,6 +19,11 @@ setup(
     long_description= readme(),
     packages=find_packages(),
     keywords=['diskspace', 'dependencies', 'pypi', 'cli', 'pydisk', 'memory', 'modules', 'packages'],
+    entry_points={
+        'console_scripts': [
+            'pydisk=pydisk.__init__.py:get_package_size',
+        ]
+    },
     license="MIT",
     classifiers=[
         "Intended Audience :: Developers",
