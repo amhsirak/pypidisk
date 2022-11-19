@@ -3,7 +3,7 @@ import pkg_resources
 import argparse
 
 ap = argparse.ArgumentParser()
-ap.add_argument("-s", "--size", help="Get size of package in KB or MB", type=str, default="MB", required=False, choices=["KB", "MB"])
+ap.add_argument("-s", "--size", help="Get size of package in KB or MB", type=str, default="KB", required=False, choices=["KB", "MB"])
 args = vars(ap.parse_args())
 
 def get_package_size(path):
