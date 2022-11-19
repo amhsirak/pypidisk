@@ -21,11 +21,13 @@ Use the command `pydisk`
 
 1. In KB
 
-<img width="350" alt="image" src="https://user-images.githubusercontent.com/76456498/202871442-d57b7c87-8cd6-4b85-a507-0854ca6d5f46.png">
+<img width="300" alt="image" src="https://user-images.githubusercontent.com/76456498/202871813-a755e9d7-e372-49d3-94b9-217c89648a8c.png">
+
 
 2. In MB
 
-<img width="350" alt="image" src="https://user-images.githubusercontent.com/76456498/202871674-1e56d641-db20-4690-a321-02e6c7e3432f.png">
+<img width="300" alt="image" src="https://user-images.githubusercontent.com/76456498/202871856-7448ea2f-83d9-4e44-b30f-b7df285e14c0.png">
+
 
 <table>
   <tr>
