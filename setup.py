@@ -5,7 +5,7 @@ def readme():
         README = f.read()
     return README
 
-VERSION = '1.0.3'
+VERSION = '1.0.4'
 DESCRIPTION = 'CLI tool to know the amount of disk space PyPi packages are occupying.'
 
 setup(
@@ -17,11 +17,11 @@ setup(
     description=DESCRIPTION,
     long_description_content_type="text/markdown",
     long_description= readme(),
-    py_modules=["pydisk/pkgsize"],
+    packages=find_packages(),
     keywords=['diskspace', 'dependencies', 'pypi', 'cli', 'pydisk', 'memory', 'modules', 'packages'],
     entry_points={
         'console_scripts': [
-            'pydisk=pkgsize:get_package_size',
+            'pydisk=pydisk.__init__.py:get_package_size',
         ]
     },
     license="MIT",
