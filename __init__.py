@@ -1,5 +1,10 @@
 import os
 import pkg_resources
+import argparse
+
+ap = argparse.ArgumentParser()
+ap.add_argument("-s", "--size", help="Get size of package in KB or MB", type=str, default="MB", required=False)
+args = vars(ap.parse_args())
 
 def get_package_size(path):
     total_size = 0
@@ -16,7 +21,11 @@ for dist in dists:
         path = os.path.join(dist.location, dist.project_name)
         size = get_package_size(path)
         if size/1000 > 1.0:
-            print (f"{dist}: {size/1000} KB")
+            if args["size"] == "KB":
+                print (f"{dist}: {size/1000} KB")
+            elif args["size"] == "MB":
+                print (f"{dist}: {size/1000000:.2f} MB")
             print("-"*40)
     except OSError:
-        '{} no longer exists'.format(dist.project_name)
+        '{} does not exist. Please check and try again later.'.format(dist.project_name)
+
