@@ -17,7 +17,7 @@ setup(
     description=DESCRIPTION,
     long_description_content_type="text/markdown",
     long_description= readme(),
-    py_modules=["pydisk/pkgsize.py"],
+    py_modules=["pydisk/pkgsize"],
     keywords=['diskspace', 'dependencies', 'pypi', 'cli', 'pydisk', 'memory', 'modules', 'packages'],
     entry_points={
         'console_scripts': [
